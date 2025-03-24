@@ -1,0 +1,50 @@
+header{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+
+#one{
+   margin-top:20px ;
+   width: 500px;
+   height: 300px;
+   border: 2px double;
+   width: 450px;
+}
+#one :hover{
+background-image: url("https://www.animaker.com/hub/wp-content/uploads/2022/10/ezgif.com-gif-maker-12-1.gif");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+#pp{
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  background-color: aquamarine;
+}
+#pp li{
+  margin: 10px;
+  text-align: center;
+}
+#pp li:hover{
+  background-color: black;
+  color: white;
+}
+#pp:hover{
+  background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnQ0ZWNka203ZGFhMDQwYTl0N2htbjBrcjd1NXo4ODlhcXQ3MnQ1eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8UGGp7rQvfhe63HrFq/giphy.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#oo{
+  font-family: cursive;
+}
+ #ee{
+ font-family: fantasy;
+
+}
