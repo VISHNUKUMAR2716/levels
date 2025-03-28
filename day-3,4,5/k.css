@@ -1,0 +1,95 @@
+#container .one{
+    background-color: ghostwhite;
+    text-align: center;
+    padding: 0 2px;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+li{
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.section-p1{
+    padding:  40px 80px;
+}
+
+#header{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px 80px;
+background-color: #e3e6f6;
+box-shadow: 0 15px rgba(0, 0,0, 0.06);
+}
+#header img{
+    width: 50px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#navbar li{
+    list-style: none;
+    padding:  0 20px;
+    position: relative;
+    
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3 ease;
+}
+#navbar li a:hover,
+#navbar li a.active
+{
+    color: green;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after
+{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: green;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#vex .two {
+  text-align: center;
+  padding: 20px;
+  
+  font-size: medium;
+  
+}
+#vex .two img {
+  width: 500px;
+}
+#vex .three h1{
+text-align: center;
+  
+}
+#vex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+background-image: url();
+background-position: center;
+background-size: cover;
+}
+#vex .u{
+
+  background-color: black;
+  color: white;
+}
+#vex .p {
+ text-align: center;
+  
+} 
