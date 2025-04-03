@@ -1,12 +1,11 @@
-
+import Post from './Post';
 import './App.css';
-import Annn from './Method';
+import ContactForm from './ContactForm';
 
 function App() {
   return (
     <div className="App">
-      <Annn />
-   
+ <ContactForm />
     </div>
   );
 }

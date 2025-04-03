@@ -1,4 +1,60 @@
-#uni{
-  width: 101px;
-  
+#one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+ margin-left: 600px;
+  border: 2px solid;
+  width: 350px;
+  height: 200px;
+  top: 240px;
+}
+
+#two {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-bottom: 5px;
+}
+#three {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-bottom: 5px;
+}
+#four {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-bottom: 5px;
+}
+#five button {
+  display: flex;
+  justify-content: center;
+  margin-left: 110px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+#two input:hover{
+  box-shadow: 1px 1px 1px 1px;
+  transform: scale(1.1);
+}
+#three input:hover{
+  box-shadow: 1px 1px 1px 1px;
+  transform: scale(1.1);
+}
+#four input:hover{
+  box-shadow: 1px 1px 1px 1px;
+  transform: scale(1.1);
+}
+
+#form{
+  border: 2px solid;
+  width: 400px;
+  text-align: center;
+ margin-left: 600px;
+
 }
