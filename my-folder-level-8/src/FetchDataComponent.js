@@ -35,7 +35,7 @@ const FetchDataComponent = () => {
     <div className="d-flex justify-content-center">
     {loading && <p>Loading...</p>}
     {data && (
-      <ul className="list-inline text-ailgn-center">
+      <ul className="list-unstyled">
         {data.map((user) => (
           <li key={user.id} className="list-inline-item">{user.name} 📧 {user.email}</li>
         ))}
