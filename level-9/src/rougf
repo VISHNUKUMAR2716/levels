@@ -1,5 +1,5 @@
  
- 
+ task-2
  <!-- <Router> 
        <nav>
         <Link to="/user/1">User 1</Link> | 
@@ -11,3 +11,11 @@
       </nav>
   </Router>
 -->
+  task-3
+  <!--    <Router>
+    <Routes>
+      <Route path='/' element={<Dashboard />}/>
+      <Route path="profile" element={<Profile />} />
+      <Route path="settings" element={<Settings />} />
+    </Routes>
+   </Router> -->
