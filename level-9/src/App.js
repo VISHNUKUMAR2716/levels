@@ -9,6 +9,7 @@ import Largelist from './Largelist';
 import { useEffect, useMemo, useState } from 'react';
 import UseCallbackExample from './Child';
 import UsermemoExample from './Call';
+import Sceach from './Sceach';
 
 
 
@@ -16,8 +17,12 @@ function App() {
 
   return(
     <div>
-   <UseCallbackExample />
-   <UsermemoExample />
+      <Router>
+        <Routes>
+          <Route path='/search' element={<Sceach />}/>
+        </Routes>
+      </Router>
+
     </div>
   )
 }
