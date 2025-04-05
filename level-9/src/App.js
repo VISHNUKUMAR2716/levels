@@ -1,33 +1,22 @@
-import './App.css';
-import Home from './Home';
-import About from './About';
-import Contect from './Contect';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-
+import './App.css';
+import User from './Users';
 function App() {
   return (
-    <Router>
-      <div className="container">
-        <div className='row bg-dark p-4'>
-          <div className='col'>
-            <img src='https://tse1.mm.bing.net/th?id=OIP.mxilfUdStJPeqU4mK_VcYAHaFj&pid=Api&P=0&h=180' id='cars-logo'/>
-          </div>
-
-        <nav className='d-flex gap-5 justify-content-end col'>
-          <Link to="/" className='text-warning   text-decoration-none'>Home</Link>
-          <Link to="/about" className='text-warning   text-decoration-none'>About</Link>
-          <Link to="/Contect" className='text-warning   text-decoration-none'>Contect</Link>
-        </nav>
-
-        </div>
-
+    <div>
+  <Router>
+       <nav>
+        <Link to="/user/1">User 1</Link> | 
+        <Link to="/user/2">User 2</Link> | 
+        <Link to="/user/3">User 3</Link>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path='/Contect' element={<Contect />} />
+          <Route path='/Users/:id' element={<User />}/>
         </Routes>
-      </div>
-    </Router>
+      </nav>
+  </Router>
+      
+    </div>
+  
   );
 }
 
