@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link,useLocation } from "react-router-dom";
+import {AnimatePresence} from 'framer-motion'
 import "./App.css";
 import User from "./Users";
 import Dashboard from "./Dashboard";
@@ -13,49 +14,22 @@ import Sceach from "./Sceach";
 import VirtualList from "./VirtualList";
 import ProductList from "./ProductList";
 import debounce from "./Utils";
+import Home from "./Home";
 
 const App = () => {
-  const [products, setProducts] = useState([]);
-  const [filter, setFilter] = useState("");
+const Location =useLocation()
 
-  const fetchData = async () => {
-    const res = await fetch("https://dummyjson.com/products?limit=100");
-    const data = await res.json();
-    setProducts(data.products);
-  };
+return(
+  <AnimatePresence>
+    <Routes location={Location} key={Location.pathname}>
+      <Route path="/"element={<Home />} />
+      <Route path="/about" element={<Profile />} />
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+    </Routes>
+  </AnimatePresence>
+)
 
-  const handleSearch = useCallback(
-    debounce((value) => {
-      setFilter(value.toLowerCase());
-    }, 300),
-    []
-  );
+}
 
-  const filtered = useMemo(() => {
-    return products.filter((p) => p.title.toLowerCase().includes(filter));
-  }, [products, filter]);
-
-  return (
-    <div style={{ padding: "20px" }}>
-      <h1>🚀 Optimized Product Dashboard</h1>
-      <input
-        placeholder="Search..."
-        onChange={(e) => handleSearch(e.target.value)}
-        style={{ padding: "10px", width: "300px", marginBottom: "20px" }}
-      />
-
-      <ProductList products={filtered} />
-
-      <Suspense fallback={<div>Loading Details...</div>}>
-        {/* Lazy loaded when needed */}
-        {/* <ProductDetail /> */}
-      </Suspense>
-    </div>
-  );
-};
 
 export default App;
