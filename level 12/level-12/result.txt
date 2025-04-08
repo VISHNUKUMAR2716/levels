@@ -1,0 +1,4 @@
+📊 Name - Avg: NaN, Max: NaN, Min: NaN
+📊 Math - Avg: 78.75, Max: 92, Min: 60
+📊 Science - Avg: 84.00, Max: 90, Min: 75
+📊 English - Avg: 82.75, Max: 95, Min: 70
