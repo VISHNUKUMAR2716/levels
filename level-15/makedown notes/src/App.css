@@ -1,0 +1,38 @@
+.app {
+  font-family: sans-serif;
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.editor input, .editor textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.editor button {
+  padding: 0.5rem 1rem;
+  background: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.preview {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.notes-list .note {
+  background: #efefef;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+.notes-list button {
+  margin-right: 10px;
+}
